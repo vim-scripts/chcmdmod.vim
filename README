@@ -1,0 +1,18 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=144
+
+This script evolved from a mistake that I used to sometimes make. To start a search, instead of using "/", I would sometimes start with ":" and after typing some text realize I am in the wrong mode, so I wrote this plugin to be able to switch between modes without loosing the text that you already typed, but I added more features to it later.
+
+- When you are in one of the :, / or ? modes, switch to a different mode
+  by typing ^X/ or ^X: or ^X?.
+- While searching you can press ^S to find the next hit, without needing to
+  first press <Enter> followed by n or N. You need to have 'incsearch'
+  option turned on for this to work. You can mix this with the ^X/ and ^X?
+  to reverse the search without needing to press enter and start over.
+- While searching using 'incsearch', you can use ^Xw to complete the
+  current word (or ^XW for WORD), <S-Right> to fetch one extra character
+  from the end of current match position (or <S-Left> from the beginning).
+
+
+
+
+Search_key_words: command chcmdmod change search Hari Krishna Dara
